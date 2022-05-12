@@ -61,6 +61,9 @@ header {
 }
 
 .nav-top-social .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -313,6 +316,7 @@ header {
   flex-wrap: wrap;
   max-width: 100%;
   padding: 40px 30px;
+  margin-bottom: 100px;
 }
 
 .product-card {
@@ -369,4 +373,50 @@ header {
 .section-video {
   background-color: rgba(0, 0, 0, 0.3);
   min-height: inherit;
+}
+
+.section-video-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: inherit;
+  width: 65%;
+  text-align: center;
+  color: #fff;
+}
+
+.section-video-description p {
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.section-video-description h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.section-video-description .section-video-text {
+  margin-bottom: 30px;
+}
+
+.section-video-description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 0 10px;
+  background-color: #8bc34a;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.section-video-description a:hover {
+  transform: scale(1.1);
+}
+
+.section-video-description a img {
+  width: 60px;
+  height: 60px;
 }
