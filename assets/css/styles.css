@@ -19,15 +19,11 @@ header {
 }
 
 .wrapper {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .nav-top {
-  display: block;
   background-color: #a5c926;
 }
 
@@ -45,7 +41,7 @@ header {
   font-size: 12px;
 }
 
-.nav-top-info .nav-top-text {
+.nav-top-info .nav-top-phone {
   margin-right: 15px;
 }
 
@@ -61,10 +57,8 @@ header {
 
 .nav-top-social .social-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   padding: 5px;
   transition: all 0.6s;
 }
@@ -75,28 +69,20 @@ header {
 }
 
 .nav-main {
-  height: 72px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.nav-main .title {
-  text-decoration: none;
-  font-size: 20px;
-  color: #111;
+  height: 72px;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 72px;
+  text-decoration: none;
+  height: inherit;
+  font-size: 20px;
+  color: #111;
 }
 
 .navigation {
@@ -193,7 +179,7 @@ header {
   transform: scale(1.1);
 }
 
-.home-categories {
+.section-home-categories {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -201,7 +187,7 @@ header {
   padding: 100px 0;
 }
 
-.home-categories > div {
+.section-home-categories > div {
   margin-right: 30px;
 }
 
@@ -331,9 +317,15 @@ header {
   transition: all 0.2s linear;
 }
 
-.product-card:hover {
+.product-card:hover  { 
   box-shadow: 2px 2px 8px #ccc;
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
+}
+
+.product-card:hover .price-product {
+  background-color: #fff;
+  border: 1px solid #a5c926;
+  color: #a5c926;
 }
 
 .products-cards > a {
@@ -378,6 +370,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: inherit;
   width: 65%;
   text-align: center;
@@ -509,3 +502,79 @@ header {
   height: 424px;
   border-radius: 16px;
 }
+
+.section-newsletter {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 8px #ccc;
+}
+
+.subscribe-title{
+  display: flex;
+  flex: 1;
+}
+
+.subscribe-icon{
+  background-color: #88ac09;
+  display: flex;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.subscribe-text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight:300;
+}
+
+.subscribe-text .text-green{ 
+  color: #88ac09;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.subscribe-form input {
+  padding: 15px 30px;
+  width: 400px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  outline: none;
+  background-color: #f8f8f8;
+}
+
+.subscribe-form input:hover{
+  background-color: #fff;
+}
+
+.subscribe-form input:focus{
+  border: 2px solid #88ac09;
+}
+
+.subscribe-form button {
+  background-color: #88ac09;
+  outline: none;
+  border: none;
+  padding: 15px 30px;
+  margin-left: 18px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 400;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover{
+  transform: scale(1.1);
+}
+
